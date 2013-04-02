@@ -1,4 +1,6 @@
 Conqclub::Application.routes.draw do
+  devise_for :installs
+
   get 'about' => 'pages#about'
   get 'standings' => 'pages#standings'
 root :to => 'pages#home'
